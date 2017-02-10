@@ -1,0 +1,46 @@
+<?php
+
+namespace MPCleanCoreBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Lier
+ *
+ * @ORM\Table(name="lier", uniqueConstraints={@ORM\UniqueConstraint(name="media_prestation", columns={"fk_prestation", "fk_med"}), @ORM\UniqueConstraint(name="ind_fk_media_prestation", columns={"fk_med"})}, indexes={@ORM\Index(name="IDX_B133E8FAA1A6453E", columns={"fk_prestation"})})
+ * @ORM\Entity
+ */
+class Lier
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_lier", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idLier;
+
+    /**
+     * @var \MPCleanCoreBundle\Entity\Media
+     *
+     * @ORM\ManyToOne(targetEntity="MPCleanCoreBundle\Entity\Media")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="fk_med", referencedColumnName="id_med")
+     * })
+     */
+    private $fkMed;
+
+    /**
+     * @var \MPCleanCoreBundle\Entity\Prestation
+     *
+     * @ORM\ManyToOne(targetEntity="MPCleanCoreBundle\Entity\Prestation")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="fk_prestation", referencedColumnName="id_prestation")
+     * })
+     */
+    private $fkPrestation;
+
+
+}
+

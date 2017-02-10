@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="MPCleanCoreBundle\Entity\Marchandises" table="marchandises">
+    <unique-constraints>
+      <unique-constraint name="ind_id_marc" columns="id_marc"/>
+    </unique-constraints>
+    <id name="idMarc" type="integer" column="id_marc">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="prixMarc" type="decimal" column="prix_marc" precision="10" scale="0" nullable="false"/>
+  </entity>
+</doctrine-mapping>

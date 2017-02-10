@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="MPCleanCoreBundle\Entity\Format" table="format">
+    <unique-constraints>
+      <unique-constraint name="ind_id_format" columns="id_form"/>
+    </unique-constraints>
+    <id name="idForm" type="integer" column="id_form">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="libelleFor" type="text" column="libelle_for" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="extensionFor" type="text" column="extension_for" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+  </entity>
+</doctrine-mapping>

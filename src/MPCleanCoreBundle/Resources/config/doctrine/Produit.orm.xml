@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="MPCleanCoreBundle\Entity\Produit" table="produit">
+    <indexes>
+      <index name="produit_marchandise" columns="fk_marc"/>
+      <index name="ind_fk_media" columns="fk_med"/>
+      <index name="ind_fk_cat" columns="fk_cat"/>
+      <index name="ind_fk_type" columns="fk_type"/>
+      <index name="ind_fk_marq" columns="fk_marq"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="ind_id_produit" columns="id_marc"/>
+    </unique-constraints>
+    <id name="idMarc" type="integer" column="id_marc">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="fkCat" type="integer" column="fk_cat" nullable="false">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="fkType" type="integer" column="fk_type" nullable="false">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="fkMarq" type="integer" column="fk_marq" nullable="false">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="libelleProd" type="text" column="libelle_prod" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="descriptionProd" type="text" column="description_prod" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="qteProd" type="integer" column="qte_prod" nullable="false">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <many-to-one field="fkMed" target-entity="Media" fetch="LAZY">
+      <join-columns>
+        <join-column name="fk_med" referenced-column-name="id_med"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="fkMarc" target-entity="Produit" fetch="LAZY">
+      <join-columns>
+        <join-column name="fk_marc" referenced-column-name="id_marc"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

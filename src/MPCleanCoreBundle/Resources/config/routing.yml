@@ -1,0 +1,3 @@
+mp_clean_core_homepage:
+    path:     /
+    defaults: { _controller: MPCleanCoreBundle:Default:index }

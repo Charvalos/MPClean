@@ -1,0 +1,40 @@
+<?php
+
+namespace MPCleanCoreBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Localite
+ *
+ * @ORM\Table(name="localite", uniqueConstraints={@ORM\UniqueConstraint(name="ind_id_loc", columns={"id_loc"})})
+ * @ORM\Entity
+ */
+class Localite
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom_loc", type="text", length=255, nullable=false)
+     */
+    private $nomLoc;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="npa_loc", type="text", length=255, nullable=false)
+     */
+    private $npaLoc;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_loc", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idLoc;
+
+
+}
+

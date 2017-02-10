@@ -1,0 +1,35 @@
+<?php
+
+namespace MPCleanCoreBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Payer
+ *
+ * @ORM\Table(name="payer", uniqueConstraints={@ORM\UniqueConstraint(name="ind_id_cli_typepaie", columns={"fk_typepai", "fk_cli"})})
+ * @ORM\Entity
+ */
+class Payer
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="fk_typepai", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $fkTypepai;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="fk_cli", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $fkCli;
+
+
+}
+

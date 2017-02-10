@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="MPCleanCoreBundle\Entity\Media" table="media">
+    <unique-constraints>
+      <unique-constraint name="ind_id_media" columns="id_med"/>
+    </unique-constraints>
+    <id name="idMed" type="integer" column="id_med">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="fkForm" type="integer" column="fk_form" nullable="false">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="urlMed" type="text" column="url_med" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+  </entity>
+</doctrine-mapping>

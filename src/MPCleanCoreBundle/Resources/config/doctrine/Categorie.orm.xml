@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="MPCleanCoreBundle\Entity\Categorie" table="categorie">
+    <unique-constraints>
+      <unique-constraint name="ind_id_categorie" columns="id_cat"/>
+    </unique-constraints>
+    <id name="idCat" type="integer" column="id_cat">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="libelleCat" type="text" column="libelle_cat" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="MPCleanCoreBundle\Entity\TypePaiement" table="type_paiement">
+    <unique-constraints>
+      <unique-constraint name="pk_ind_typepaie" columns="id_typepai"/>
+    </unique-constraints>
+    <id name="idTypepai" type="integer" column="id_typepai">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="libellePaie" type="text" column="libelle_paie" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+  </entity>
+</doctrine-mapping>

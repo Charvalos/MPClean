@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="MPCleanCoreBundle\Entity\Client" table="client">
+    <indexes>
+      <index name="ind_fk_localite" columns="fk_loc"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="ind_id_cli" columns="id_cli"/>
+    </unique-constraints>
+    <id name="idCli" type="integer" column="id_cli">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nomCli" type="text" column="nom_cli" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="prenomCli" type="text" column="prenom_cli" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="telPortableCli" type="text" column="tel_portable_cli" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="emailCli" type="text" column="email_cli" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="adresse" type="text" column="adresse" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <many-to-one field="fkLoc" target-entity="Localite" fetch="LAZY">
+      <join-columns>
+        <join-column name="fk_loc" referenced-column-name="id_loc"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

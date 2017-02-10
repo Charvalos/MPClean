@@ -1,0 +1,54 @@
+<?php
+
+namespace MPCleanCoreBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * OptionPrestation
+ *
+ * @ORM\Table(name="option_prestation", uniqueConstraints={@ORM\UniqueConstraint(name="ind_id_option", columns={"id_opt"})})
+ * @ORM\Entity
+ */
+class OptionPrestation
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="libelle_opt", type="text", length=255, nullable=false)
+     */
+    private $libelleOpt;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description_opt", type="text", length=65535, nullable=false)
+     */
+    private $descriptionOpt;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_opt", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idOpt;
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     *
+     * @ORM\ManyToMany(targetEntity="MPCleanCoreBundle\Entity\Prestation", mappedBy="fkOpt")
+     */
+    private $fkMarc;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->fkMarc = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+}
+

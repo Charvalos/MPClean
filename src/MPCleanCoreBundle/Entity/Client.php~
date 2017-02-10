@@ -1,0 +1,71 @@
+<?php
+
+namespace MPCleanCoreBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Client
+ *
+ * @ORM\Table(name="client", uniqueConstraints={@ORM\UniqueConstraint(name="ind_id_cli", columns={"id_cli"})}, indexes={@ORM\Index(name="ind_fk_localite", columns={"fk_loc"})})
+ * @ORM\Entity
+ */
+class Client
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom_cli", type="text", length=255, nullable=false)
+     */
+    private $nomCli;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom_cli", type="text", length=255, nullable=false)
+     */
+    private $prenomCli;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tel_portable_cli", type="text", length=255, nullable=false)
+     */
+    private $telPortableCli;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email_cli", type="text", length=255, nullable=false)
+     */
+    private $emailCli;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="text", length=255, nullable=false)
+     */
+    private $adresse;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_cli", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idCli;
+
+    /**
+     * @var \MPCleanCoreBundle\Entity\Localite
+     *
+     * @ORM\ManyToOne(targetEntity="MPCleanCoreBundle\Entity\Localite")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="fk_loc", referencedColumnName="id_loc")
+     * })
+     */
+    private $fkLoc;
+
+
+}
+

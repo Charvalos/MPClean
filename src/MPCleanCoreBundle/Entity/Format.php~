@@ -1,0 +1,40 @@
+<?php
+
+namespace MPCleanCoreBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Format
+ *
+ * @ORM\Table(name="format", uniqueConstraints={@ORM\UniqueConstraint(name="ind_id_format", columns={"id_form"})})
+ * @ORM\Entity
+ */
+class Format
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="libelle_for", type="text", length=255, nullable=false)
+     */
+    private $libelleFor;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="extension_for", type="text", length=255, nullable=false)
+     */
+    private $extensionFor;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_form", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idForm;
+
+
+}
+
