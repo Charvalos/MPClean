@@ -5,3 +5,7 @@ mp_clean_core:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+mpclean_home:
+    path:   /index
+    defaults: {_controller: MPCleanCoreBundle:Main:index}
