@@ -9,3 +9,7 @@ app:
 mpclean_home:
     path:   /index
     defaults: {_controller: MPCleanCoreBundle:Main:index}
+
+mpclean_produit:
+    path:   /produit
+    defaults: {_controller: MPCleanCoreBundle:Produit:index}
