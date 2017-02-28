@@ -10,6 +10,14 @@ mpclean_home:
     path:   /index
     defaults: {_controller: MPCleanCoreBundle:Main:index}
 
+mpclean_contact:
+    path:   /contact
+    defaults: {_controller: MPCleanCoreBundle:Main:contact}
+
 mpclean_produit:
     path:   /produit
     defaults: {_controller: MPCleanCoreBundle:Produit:index}
+
+mpclean_prestation:
+    path:   /prestation
+    defaults: {_controller: MPCleanCoreBundle:Prestation:index}

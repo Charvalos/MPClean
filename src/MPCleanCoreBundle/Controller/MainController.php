@@ -13,4 +13,11 @@ class MainController extends Controller
 
         return new Response($content);
     }
+
+    public function contactAction()
+    {
+        $content = $this->get('templating')->render('MPCleanCoreBundle:Main:contact.html.twig');
+
+        return new Response($content);
+    }
 }
