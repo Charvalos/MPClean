@@ -9,8 +9,11 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="marchandises", uniqueConstraints={@ORM\UniqueConstraint(name="ind_id_marc", columns={"id_marc"})})
  * @ORM\Entity
+ * @ORMInheritance("JOINED")
+ * @ORMDiscriminatorColumn(name = "type", type = "string")
+ * @ORMDiscriminatorMap({"prestation" = "Prestation", "produit" = "Produit"})
  */
-class Marchandises
+abstract class Marchandises
 {
     /**
      * @var string

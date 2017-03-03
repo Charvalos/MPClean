@@ -7,10 +7,10 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Produit
  *
- * @ORM\Table(name="produit", uniqueConstraints={@ORM\UniqueConstraint(name="ind_id_produit", columns={"id_marc"})}, indexes={@ORM\Index(name="produit_marchandise", columns={"fk_marc"}), @ORM\Index(name="ind_fk_media", columns={"fk_med"}), @ORM\Index(name="ind_fk_cat", columns={"fk_cat"}), @ORM\Index(name="ind_fk_type", columns={"fk_type"}), @ORM\Index(name="ind_fk_marq", columns={"fk_marq"})})
+ * @ORM\Table(name="produit", uniqueConstraints={@ORM\UniqueConstraint(name="ind_id_produit", columns={"id_prod"})}, indexes={@ORM\Index(name="produit_marchandise", columns={"fk_marc"}), @ORM\Index(name="ind_fk_media", columns={"fk_med"}), @ORM\Index(name="ind_fk_cat", columns={"fk_cat"}), @ORM\Index(name="ind_fk_type", columns={"fk_type"}), @ORM\Index(name="ind_fk_marq", columns={"fk_marq"})})
  * @ORM\Entity
  */
-class Produit
+class Produit extends Marchandises
 {
     /**
      * @var integer
