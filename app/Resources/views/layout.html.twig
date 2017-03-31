@@ -6,28 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% block stylesheets %}
-      <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     {% endblock %}
 
     {% block javascript %}
-      <script src="{{ asset('js/jquery-3.1.1.min.js') }}"></script>
-      <script src="{{ asset('js/bootstrap.js') }}"></script>
+        <script type="text/javascript" href="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" href="{{ asset('js/jquery.min.js') }}"></script>
+        <script type="text/javascript" href="{{ asset('js/bootstrap.js') }}"></script>
+        <script type="text/javascript" href="{{ asset('js/jquery.easydropdown.js') }}"></script>
+        <script type="text/javascript" href="{{ asset('js/responsiveslides.min.js') }}"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#slider").responsiveSlides({
+                    auto: true,
+                    nav: true,
+                    speed: 500,
+                    namespace: "callbacks",
+                    pager: true,
+                });
+            });
+        </script>
     {% endblock %}
 
     <title>{% block title %}MPClean{% endblock %}</title>
   </head>
   <body>
-    <div class="container">
       {% block menu %}
-      <div class="navbar navbar-inverse">
-        <div class="navbar-inner">
-          <ul class="nav">
-            <li class="active"><a href="{{ path('mpclean_home') }}">Accueil</a></li>
-            <li><a href="{{ path('mpclean_prestation') }}">Prestation</a></li>
-            <li><a href="{{ path('mpclean_produit') }}">Produits</a></li>
-            <li><a href="#">Créer un compte</a></li>
-            <li><a href="{{ path('mpclean_contact') }}">Contact</a></li>
-          </ul>
+      <div class="banner-bg banner-bg1">
+        <div class="container">
+              <div class="header">
+                  <div class="logo">
+                      LOGO MPCLEAN
+                  </div>
+                  <div class="top-nav">
+                    <ul class="nav">
+                        <li class="dropdown1">
+                            <a href="#">Produits</a>
+                            <ul class="dropdown2">
+                                <li><a href="#">Produit 1</a></li>
+                                <li><a href="#">Produit 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown1">
+                            <a href="#">Prestation</a>
+                            <ul class="dropdown2">
+                                <li><a href="#">Prestation 1</a></li>
+                                <li><a href="#">Prestation 2</a></li>
+                                <li><a href="#">Prestation 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown1">
+                            <a href="#">Mon compte</a>
+                            <ul class="dropdown2">
+                                <li><a href="#">Se connecter</a></li>
+                                <li><a href="#">S'inscrire</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown1">
+                            <a href="#">Qui sommes-nous ?</a>
+                            <ul class="dropdown2">
+                                <li><a href="#">Personnel</a></li>
+                                <li><a href="#">Nous contacter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+              </div>
+        </div>
+        <div class="caption">
+            <div class="slider">
+                <div class="callbacks_container">
+                    <ul class="rslides" id="slider">
+                        <li"><h1>HANDMADE BICYCLE</h1></li>
+                        <li><h1>SPEED BICYCLE</h1></li>
+                        <li><h1>MOUINTAIN BICYCLE</h1></li>
+                    </ul>
+                    <a href="#" class="callbacks_nav callbacks1_nav prev">Previous</a>
+                    <a href="#" class="callbacks_nav callbacks1_nav next">Next</a>
+                    <ul class="callbacks_tabs callbacks1_tabs">
+
+                    </ul>
+                    <p>You <span>create</span> the <span>journey,</span> we supply the <span>parts</span></p>
+                    <a class="morebtn" href="bicycles.html">SHOP BIKES</a>
+                </div>
+            </div>
         </div>
       </div>
       {% endblock %}

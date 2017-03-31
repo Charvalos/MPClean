@@ -7,11 +7,11 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Marchandises
  *
- * @ORM\Table(name="marchandises", uniqueConstraints={@ORM\UniqueConstraint(name="ind_id_marc", columns={"id_marc"})})
+ * @ORM\Table(name="marchandises")
  * @ORM\Entity
- * @ORMInheritance("JOINED")
- * @ORMDiscriminatorColumn(name = "type", type = "string")
- * @ORMDiscriminatorMap({"prestation" = "Prestation", "produit" = "Produit"})
+ * @ORM\InheritanceType("JOINED")
+ * @ORM\DiscriminatorColumn(name = "type", type = "string")
+ * @ORM\DiscriminatorMap({"prestation" = "Prestation", "produit" = "Produit"})
  */
 abstract class Marchandises
 {
@@ -30,8 +30,6 @@ abstract class Marchandises
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $idMarc;
-
-
 
     /**
      * Set prixMarc
