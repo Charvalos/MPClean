@@ -1,13 +1,109 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
+    {% endblock %}
+
+    {% block javascript %}
+        <script type="text/javascript" href="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" href="{{ asset('js/jquery.min.js') }}"></script>
+        <script type="text/javascript" href="{{ asset('js/bootstrap.js') }}"></script>
+        <script type="text/javascript" href="{{ asset('js/jquery.easydropdown.js') }}"></script>
+        <script type="text/javascript" href="{{ asset('js/responsiveslides.min.js') }}"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#slider").responsiveSlides({
+                    auto: true,
+                    nav: true,
+                    speed: 500,
+                    namespace: "callbacks",
+                    pager: true,
+                });
+            });
+        </script>
+    {% endblock %}
+
+    <title>{% block title %}MPClean{% endblock %}</title>
+</head>
+<body>
+{% block menu %}
+    <div class="banner-bg banner-bg2">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    LOGO MPCLEAN
+                </div>
+                <div class="top-nav">
+                    <ul class="nav">
+                        <li class="dropdown1">
+                            <a href="#">Produits</a>
+                            <ul class="dropdown2">
+                                <li><a href="#">Produit 1</a></li>
+                                <li><a href="#">Produit 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown1">
+                            <a href="#">Prestation</a>
+                            <ul class="dropdown2">
+                                <li><a href="#">Prestation 1</a></li>
+                                <li><a href="#">Prestation 2</a></li>
+                                <li><a href="#">Prestation 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown1">
+                            <a href="#">Mon compte</a>
+                            <ul class="dropdown2">
+                                <li><a href="#">Se connecter</a></li>
+                                <li><a href="#">S'inscrire</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown1">
+                            <a href="#">Qui sommes-nous ?</a>
+                            <ul class="dropdown2">
+                                <li><a href="#">Personnel</a></li>
+                                <li><a href="#">Nous contacter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="caption">
+            <div class="slider">
+                <div class="callbacks_container">
+                    <ul class="rslides" id="slider">
+                        <li><h1>HANDMADE BICYCLE</h1></li>
+                        <li><h1>SPEED BICYCLE</h1></li>
+                        <li><h1>MOUINTAIN BICYCLE</h1></li>
+                    </ul>
+                    <a href="#" class="callbacks_nav callbacks1_nav prev">Previous</a>
+                    <a href="#" class="callbacks_nav callbacks1_nav next">Next</a>
+
+                    <ul class="callbacks_tabs callbacks1_tabs">
+                        <li class="callbacks1_s1">1</li>
+                        <li class="callbacks1_s2">2</li>
+                        <li class="callbacks1_s3">3</li>
+                    </ul>
+
+                    <p>You <span>create</span> the <span>journey,</span> we supply the <span>parts</span></p>
+                    <a class="morebtn" href="bicycles.html">SHOP BIKES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+</div>
+</body>
 </html>
