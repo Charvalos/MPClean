@@ -7,15 +7,35 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Produit
  *
- * @ORM\Table(name="produit", uniqueConstraints={@ORM\UniqueConstraint(name="ind_id_produit", columns={"id_marc"})}, indexes={@ORM\Index(name="produit_marchandise", columns={"fk_marc"}), @ORM\Index(name="ind_fk_media", columns={"fk_med"}), @ORM\Index(name="ind_fk_cat", columns={"fk_cat"}), @ORM\Index(name="ind_fk_type", columns={"fk_type"}), @ORM\Index(name="ind_fk_marq", columns={"fk_marq"})})
+ * @ORM\Table(name="produit",
+ *  indexes={
+ *      @ORM\Index(
+ *          name="ind_fk_media",
+ *          columns={"fk_med"}
+ *      ),
+ *      @ORM\Index(
+ *          name="ind_fk_cat",
+ *          columns={"fk_cat"}
+ *      ),
+ *      @ORM\Index(
+ *          name="ind_fk_type",
+ *          columns={"fk_type"}
+ *      ),
+ *      @ORM\Index(
+ *          name="ind_fk_marq",
+ *          columns={"fk_marq"}
+ *      )
+ *  }
+ * )
  * @ORM\Entity
  */
-class Produit
+class Produit extends Marchandises
 {
     /**
      * @var integer
      *
      * @ORM\Column(name="fk_cat", type="integer", nullable=false)
+     * @ORM\OneToOne(targetEntity="MPClean\MPCleanCoreBundle\Entity\Media", cascade={"persist"})
      */
     private $fkCat;
 
@@ -23,15 +43,9 @@ class Produit
      * @var integer
      *
      * @ORM\Column(name="fk_type", type="integer", nullable=false)
+     * @ORM\OneToOne(targetEntity="MPClean\MPCleanCoreBundle\Entity\TypeProduit", cascade={"persist"})
      */
     private $fkType;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="fk_marq", type="integer", nullable=false)
-     */
-    private $fkMarq;
 
     /**
      * @var string
@@ -55,34 +69,10 @@ class Produit
     private $qteProd;
 
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="id_prod", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    private $idProd;
-
-    /**
      * @var \MPCleanCoreBundle\Entity\Media
-     *
-     * @ORM\ManyToOne(targetEntity="MPCleanCoreBundle\Entity\Media")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="fk_med", referencedColumnName="id_med")
-     * })
+     * @ORM\OneToOne(targetEntity="MPClean\MPCleanCoreBundle\Entity\Media", cascade={"persist"})
      */
     private $fkMed;
-
-    /**
-     * @var \MPCleanCoreBundle\Entity\Produit
-     *
-     * @ORM\ManyToOne(targetEntity="MPCleanCoreBundle\Entity\Marchandises")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="fk_marc", referencedColumnName="id_marc")
-     * })
-     */
-    private $fkMarc;
-
 
 
     /**
@@ -230,47 +220,13 @@ class Produit
     }
 
     /**
-     * Get idProd
-     *
-     * @return integer
-     */
-    public function getidProd()
-    {
-        return $this->idProd;
-    }
-
-    /**
-     * Set fkMed
-     *
-     * @param \MPCleanCoreBundle\Entity\Media $fkMed
-     *
-     * @return Produit
-     */
-    public function setFkMed(\MPCleanCoreBundle\Entity\Media $fkMed = null)
-    {
-        $this->fkMed = $fkMed;
-
-        return $this;
-    }
-
-    /**
-     * Get fkMed
-     *
-     * @return \MPCleanCoreBundle\Entity\Media
-     */
-    public function getFkMed()
-    {
-        return $this->fkMed;
-    }
-
-    /**
      * Set fkMarc
      *
-     * @param \MPCleanCoreBundle\Entity\Marchandises $fkMarc
+     * @param \MPCleanCoreBundle\Entity\Marchandise $fkMarc
      *
      * @return Produit
      */
-    public function setFkMarc(\MPCleanCoreBundle\Entity\Marchandises $fkMarc = null)
+    public function setFkMarc(\MPCleanCoreBundle\Entity\Marchandise $fkMarc = null)
     {
         $this->fkMarc = $fkMarc;
 
@@ -280,7 +236,7 @@ class Produit
     /**
      * Get fkMarc
      *
-     * @return \MPCleanCoreBundle\Entity\Marchandises
+     * @return \MPCleanCoreBundle\Entity\Marchandise
      */
     public function getFkMarc()
     {

@@ -5,17 +5,15 @@ namespace MPCleanCoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Prestation
- *
- * @ORM\Table(name="prestation", indexes={@ORM\Index(name="marchandise_prestation", columns={"fk_marc"}), @ORM\Index(name="marchandise_article", columns={"fk_art"})})
  * @ORM\Entity
  */
-class Prestation
+class Prestation extends Marchandises
 {
     /**
      * @var integer
      *
      * @ORM\Column(name="fk_art", type="integer", nullable=false)
+     * @ORM\OneToOne(targetEntity="MPClean\MPCleanCoreBundle\Entity\Article", cascade={"persist"})
      */
     private $fkArt;
 
@@ -34,46 +32,9 @@ class Prestation
     private $descriptionServ;
 
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="id_prestation", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    private $idPrestation;
-
-    /**
      * @var \MPCleanCoreBundle\Entity\Marchandises
-     *
-     * @ORM\ManyToOne(targetEntity="MPCleanCoreBundle\Entity\Marchandises")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="fk_marc", referencedColumnName="id_marc")
-     * })
      */
     private $fkMarc;
-
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     *
-     * @ORM\ManyToMany(targetEntity="MPCleanCoreBundle\Entity\OptionPrestation", inversedBy="fkMarc")
-     * @ORM\JoinTable(name="contenir",
-     *   joinColumns={
-     *     @ORM\JoinColumn(name="fk_marc", referencedColumnName="id_prestation")
-     *   },
-     *   inverseJoinColumns={
-     *     @ORM\JoinColumn(name="fk_opt", referencedColumnName="id_opt")
-     *   }
-     * )
-     */
-    private $fkOpt;
-
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->fkOpt = new \Doctrine\Common\Collections\ArrayCollection();
-    }
 
 
     /**
@@ -149,23 +110,13 @@ class Prestation
     }
 
     /**
-     * Get idPrestation
-     *
-     * @return integer
-     */
-    public function getIdPrestation()
-    {
-        return $this->idPrestation;
-    }
-
-    /**
      * Set fkMarc
      *
-     * @param \MPCleanCoreBundle\Entity\Marchandises $fkMarc
+     * @param \MPCleanCoreBundle\Entity\Marchandise $fkMarc
      *
      * @return Prestation
      */
-    public function setFkMarc(\MPCleanCoreBundle\Entity\Marchandises $fkMarc = null)
+    public function setFkMarc(\MPCleanCoreBundle\Entity\Marchandise $fkMarc = null)
     {
         $this->fkMarc = $fkMarc;
 
@@ -175,44 +126,10 @@ class Prestation
     /**
      * Get fkMarc
      *
-     * @return \MPCleanCoreBundle\Entity\Marchandises
+     * @return \MPCleanCoreBundle\Entity\Marchandise
      */
     public function getFkMarc()
     {
         return $this->fkMarc;
-    }
-
-    /**
-     * Add fkOpt
-     *
-     * @param \MPCleanCoreBundle\Entity\OptionPrestation $fkOpt
-     *
-     * @return Prestation
-     */
-    public function addFkOpt(\MPCleanCoreBundle\Entity\OptionPrestation $fkOpt)
-    {
-        $this->fkOpt[] = $fkOpt;
-
-        return $this;
-    }
-
-    /**
-     * Remove fkOpt
-     *
-     * @param \MPCleanCoreBundle\Entity\OptionPrestation $fkOpt
-     */
-    public function removeFkOpt(\MPCleanCoreBundle\Entity\OptionPrestation $fkOpt)
-    {
-        $this->fkOpt->removeElement($fkOpt);
-    }
-
-    /**
-     * Get fkOpt
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getFkOpt()
-    {
-        return $this->fkOpt;
     }
 }
