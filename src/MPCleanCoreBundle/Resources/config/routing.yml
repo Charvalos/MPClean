@@ -1,3 +1,7 @@
 mp_clean_core_homepage:
     path:     /
-    defaults: { _controller: MPCleanCoreBundle:Default:index }
+    defaults: { _controller: MPCleanCoreBundle:Main:index }
+
+mp_clean_core_contact:
+    path:     /contact
+    defaults: {_controller: MPCleanCoreBundle:Main:contact}

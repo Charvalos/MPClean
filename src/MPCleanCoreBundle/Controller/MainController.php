@@ -9,7 +9,7 @@ class MainController extends Controller
 {
     public function indexAction()
     {
-        $content = $this->get('templating')->render('index/index.html.twig');
+        $content = $this->get('templating')->render('MPCleanCoreBundle:Main:index.html.twig');
 
         return new Response($content);
     }

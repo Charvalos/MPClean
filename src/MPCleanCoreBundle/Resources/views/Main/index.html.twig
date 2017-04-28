@@ -1,6 +1,27 @@
-{% extends "::layout.html.twig" %}
+{%  extends 'MPCleanCoreBundle:Main:layout.html.twig' %}
 
-{% block title %}{{ parent() }}{% endblock %}
-
-{% block body %}
+{% block content %}
+    <div id="cate" class="categories">
+        <div class="container">
+            <h3>SERVICES & PRODUITS</h3>
+            <div class="categorie-grids">
+                <a href="bicycles.html"><div class="col-md-4 cate-grid grid1">
+                        <h4>ACCESSOIRES DE VOITURES</h4>
+                        <p>Décorez l'intérieur de votre voiture</p>
+                        <a class="store" href="bicycles.html">GO TO STORE</a>
+                    </div></a>
+                <a href="bicycles.html"><div class="col-md-4 cate-grid grid2">
+                        <h4>NETTOYAGE / ENTRETIEN</h4>
+                        <p>Retrouvez votre véhicule comme neuf</p>
+                        <a class="store" href="bicycles.html">GO TO STORE</a>
+                    </div></a>
+                <a href="bicycles.html"><div class="col-md-4 cate-grid grid3">
+                        <h4>PRODUITS DE NETTOYAGE</h4>
+                        <p>Entretenez votre voiture</p>
+                        <a class="store" href="bicycles.html">GO TO STORE</a>
+                    </div></a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
