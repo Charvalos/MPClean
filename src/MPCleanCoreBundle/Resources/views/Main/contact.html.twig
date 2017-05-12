@@ -10,6 +10,9 @@
                 <div class="top-nav">
                     <ul class="nav">
                         <li class="dropdown1">
+                            <a href="{{ path('mp_clean_index') }}">Accueil</a>
+                        </li>
+                        <li class="dropdown1">
                             <a href="#">Produits</a>
                             <ul class="dropdown2">
                                 <li><a href="#">Produit 1</a></li>
@@ -35,7 +38,7 @@
                             <a href="#">Qui sommes-nous ?</a>
                             <ul class="dropdown2">
                                 <li><a href="#">Personnel</a></li>
-                                <li><a href="{{ path('mp_clean_core_contact') }}">Nous contacter</a></li>
+                                <li><a href="{{ path('mp_clean_contact') }}">Nous contacter</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -47,4 +50,18 @@
 {%  endblock %}
 
 {% block content %}
+    <div class="contact">
+        <div class="container">
+            <h3>NOUS CONTACTER</h3>
+            <p>Contactez-nous pour nous poser toutes vos questions</p>
+            <form>
+                <input type="text" placeholder="NOM" required>
+                <input type="text" placeholder="PRENOM" required>
+                <input class="user" type="text" placeholder="EMAIL" required>
+                <br>
+                <textarea placeholder="MESSAGE"></textarea>
+                <input type="submit" value="ENVOYER">
+            </form>
+        </div>
+    </div>
 {% endblock %}
