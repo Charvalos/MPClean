@@ -31,5 +31,52 @@ class Posseder
     private $fkCli;
 
 
-}
 
+    /**
+     * Set fkVhc
+     *
+     * @param integer $fkVhc
+     *
+     * @return Posseder
+     */
+    public function setFkVhc($fkVhc)
+    {
+        $this->fkVhc = $fkVhc;
+
+        return $this;
+    }
+
+    /**
+     * Get fkVhc
+     *
+     * @return integer
+     */
+    public function getFkVhc()
+    {
+        return $this->fkVhc;
+    }
+
+    /**
+     * Set fkCli
+     *
+     * @param integer $fkCli
+     *
+     * @return Posseder
+     */
+    public function setFkCli($fkCli)
+    {
+        $this->fkCli = $fkCli;
+
+        return $this;
+    }
+
+    /**
+     * Get fkCli
+     *
+     * @return integer
+     */
+    public function getFkCli()
+    {
+        return $this->fkCli;
+    }
+}

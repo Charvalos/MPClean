@@ -29,5 +29,38 @@ class TypeProduit
     private $idTypeProduit;
 
 
-}
 
+    /**
+     * Set libelleTyp
+     *
+     * @param string $libelleTyp
+     *
+     * @return TypeProduit
+     */
+    public function setLibelleTyp($libelleTyp)
+    {
+        $this->libelleTyp = $libelleTyp;
+
+        return $this;
+    }
+
+    /**
+     * Get libelleTyp
+     *
+     * @return string
+     */
+    public function getLibelleTyp()
+    {
+        return $this->libelleTyp;
+    }
+
+    /**
+     * Get idTypeProduit
+     *
+     * @return integer
+     */
+    public function getIdTypeProduit()
+    {
+        return $this->idTypeProduit;
+    }
+}

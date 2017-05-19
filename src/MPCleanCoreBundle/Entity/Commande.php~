@@ -63,5 +63,134 @@ class Commande
     private $fkMarc;
 
 
-}
 
+    /**
+     * Set dateComm
+     *
+     * @param \DateTime $dateComm
+     *
+     * @return Commande
+     */
+    public function setDateComm($dateComm)
+    {
+        $this->dateComm = $dateComm;
+
+        return $this;
+    }
+
+    /**
+     * Get dateComm
+     *
+     * @return \DateTime
+     */
+    public function getDateComm()
+    {
+        return $this->dateComm;
+    }
+
+    /**
+     * Set enCoursComm
+     *
+     * @param boolean $enCoursComm
+     *
+     * @return Commande
+     */
+    public function setEnCoursComm($enCoursComm)
+    {
+        $this->enCoursComm = $enCoursComm;
+
+        return $this;
+    }
+
+    /**
+     * Get enCoursComm
+     *
+     * @return boolean
+     */
+    public function getEnCoursComm()
+    {
+        return $this->enCoursComm;
+    }
+
+    /**
+     * Set qteComm
+     *
+     * @param integer $qteComm
+     *
+     * @return Commande
+     */
+    public function setQteComm($qteComm)
+    {
+        $this->qteComm = $qteComm;
+
+        return $this;
+    }
+
+    /**
+     * Get qteComm
+     *
+     * @return integer
+     */
+    public function getQteComm()
+    {
+        return $this->qteComm;
+    }
+
+    /**
+     * Get idComm
+     *
+     * @return integer
+     */
+    public function getIdComm()
+    {
+        return $this->idComm;
+    }
+
+    /**
+     * Set fkCli
+     *
+     * @param \MPCleanCoreBundle\Entity\Client $fkCli
+     *
+     * @return Commande
+     */
+    public function setFkCli(\MPCleanCoreBundle\Entity\Client $fkCli = null)
+    {
+        $this->fkCli = $fkCli;
+
+        return $this;
+    }
+
+    /**
+     * Get fkCli
+     *
+     * @return \MPCleanCoreBundle\Entity\Client
+     */
+    public function getFkCli()
+    {
+        return $this->fkCli;
+    }
+
+    /**
+     * Set fkMarc
+     *
+     * @param \MPCleanCoreBundle\Entity\Marchandises $fkMarc
+     *
+     * @return Commande
+     */
+    public function setFkMarc(\MPCleanCoreBundle\Entity\Marchandises $fkMarc = null)
+    {
+        $this->fkMarc = $fkMarc;
+
+        return $this;
+    }
+
+    /**
+     * Get fkMarc
+     *
+     * @return \MPCleanCoreBundle\Entity\Marchandises
+     */
+    public function getFkMarc()
+    {
+        return $this->fkMarc;
+    }
+}

@@ -9,9 +9,9 @@
       <index name="ind_fk_marq" columns="fk_marq"/>
     </indexes>
     <unique-constraints>
-      <unique-constraint name="ind_id_produit" columns="id_marc"/>
+      <unique-constraint name="ind_id_produit" columns="id_prod"/>
     </unique-constraints>
-    <id name="idMarc" type="integer" column="id_marc">
+    <id name="idProd" type="integer" column="id_prod">
       <generator strategy="IDENTITY"/>
     </id>
     <field name="fkCat" type="integer" column="fk_cat" nullable="false">
@@ -51,7 +51,7 @@
     </many-to-one>
     <many-to-one field="fkMarc" target-entity="Produit" fetch="LAZY">
       <join-columns>
-        <join-column name="fk_marc" referenced-column-name="id_marc"/>
+        <join-column name="fk_marc" referenced-column-name="id_prod"/>
       </join-columns>
     </many-to-one>
   </entity>

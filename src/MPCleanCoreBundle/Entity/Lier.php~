@@ -42,5 +42,62 @@ class Lier
     private $fkPrestation;
 
 
-}
 
+    /**
+     * Get idLier
+     *
+     * @return integer
+     */
+    public function getIdLier()
+    {
+        return $this->idLier;
+    }
+
+    /**
+     * Set fkMed
+     *
+     * @param \MPCleanCoreBundle\Entity\Media $fkMed
+     *
+     * @return Lier
+     */
+    public function setFkMed(\MPCleanCoreBundle\Entity\Media $fkMed = null)
+    {
+        $this->fkMed = $fkMed;
+
+        return $this;
+    }
+
+    /**
+     * Get fkMed
+     *
+     * @return \MPCleanCoreBundle\Entity\Media
+     */
+    public function getFkMed()
+    {
+        return $this->fkMed;
+    }
+
+    /**
+     * Set fkPrestation
+     *
+     * @param \MPCleanCoreBundle\Entity\Prestation $fkPrestation
+     *
+     * @return Lier
+     */
+    public function setFkPrestation(\MPCleanCoreBundle\Entity\Prestation $fkPrestation = null)
+    {
+        $this->fkPrestation = $fkPrestation;
+
+        return $this;
+    }
+
+    /**
+     * Get fkPrestation
+     *
+     * @return \MPCleanCoreBundle\Entity\Prestation
+     */
+    public function getFkPrestation()
+    {
+        return $this->fkPrestation;
+    }
+}

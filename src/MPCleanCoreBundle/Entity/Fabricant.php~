@@ -39,5 +39,62 @@ class Fabricant
     private $fkArt;
 
 
-}
 
+    /**
+     * Set nomFab
+     *
+     * @param string $nomFab
+     *
+     * @return Fabricant
+     */
+    public function setNomFab($nomFab)
+    {
+        $this->nomFab = $nomFab;
+
+        return $this;
+    }
+
+    /**
+     * Get nomFab
+     *
+     * @return string
+     */
+    public function getNomFab()
+    {
+        return $this->nomFab;
+    }
+
+    /**
+     * Get idFab
+     *
+     * @return integer
+     */
+    public function getIdFab()
+    {
+        return $this->idFab;
+    }
+
+    /**
+     * Set fkArt
+     *
+     * @param \MPCleanCoreBundle\Entity\Article $fkArt
+     *
+     * @return Fabricant
+     */
+    public function setFkArt(\MPCleanCoreBundle\Entity\Article $fkArt = null)
+    {
+        $this->fkArt = $fkArt;
+
+        return $this;
+    }
+
+    /**
+     * Get fkArt
+     *
+     * @return \MPCleanCoreBundle\Entity\Article
+     */
+    public function getFkArt()
+    {
+        return $this->fkArt;
+    }
+}

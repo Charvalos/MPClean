@@ -50,5 +50,96 @@ class OptionPrestation
         $this->fkMarc = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
-}
 
+    /**
+     * Set libelleOpt
+     *
+     * @param string $libelleOpt
+     *
+     * @return OptionPrestation
+     */
+    public function setLibelleOpt($libelleOpt)
+    {
+        $this->libelleOpt = $libelleOpt;
+
+        return $this;
+    }
+
+    /**
+     * Get libelleOpt
+     *
+     * @return string
+     */
+    public function getLibelleOpt()
+    {
+        return $this->libelleOpt;
+    }
+
+    /**
+     * Set descriptionOpt
+     *
+     * @param string $descriptionOpt
+     *
+     * @return OptionPrestation
+     */
+    public function setDescriptionOpt($descriptionOpt)
+    {
+        $this->descriptionOpt = $descriptionOpt;
+
+        return $this;
+    }
+
+    /**
+     * Get descriptionOpt
+     *
+     * @return string
+     */
+    public function getDescriptionOpt()
+    {
+        return $this->descriptionOpt;
+    }
+
+    /**
+     * Get idOpt
+     *
+     * @return integer
+     */
+    public function getIdOpt()
+    {
+        return $this->idOpt;
+    }
+
+    /**
+     * Add fkMarc
+     *
+     * @param \MPCleanCoreBundle\Entity\Prestation $fkMarc
+     *
+     * @return OptionPrestation
+     */
+    public function addFkMarc(\MPCleanCoreBundle\Entity\Prestation $fkMarc)
+    {
+        $this->fkMarc[] = $fkMarc;
+
+        return $this;
+    }
+
+    /**
+     * Remove fkMarc
+     *
+     * @param \MPCleanCoreBundle\Entity\Prestation $fkMarc
+     */
+    public function removeFkMarc(\MPCleanCoreBundle\Entity\Prestation $fkMarc)
+    {
+        $this->fkMarc->removeElement($fkMarc);
+    }
+
+    /**
+     * Get fkMarc
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getFkMarc()
+    {
+        return $this->fkMarc;
+    }
+}

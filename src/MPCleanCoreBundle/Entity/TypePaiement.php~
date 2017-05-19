@@ -29,5 +29,38 @@ class TypePaiement
     private $idTypepai;
 
 
-}
 
+    /**
+     * Set libellePaie
+     *
+     * @param string $libellePaie
+     *
+     * @return TypePaiement
+     */
+    public function setLibellePaie($libellePaie)
+    {
+        $this->libellePaie = $libellePaie;
+
+        return $this;
+    }
+
+    /**
+     * Get libellePaie
+     *
+     * @return string
+     */
+    public function getLibellePaie()
+    {
+        return $this->libellePaie;
+    }
+
+    /**
+     * Get idTypepai
+     *
+     * @return integer
+     */
+    public function getIdTypepai()
+    {
+        return $this->idTypepai;
+    }
+}

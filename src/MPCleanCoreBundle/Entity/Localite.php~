@@ -36,5 +36,62 @@ class Localite
     private $idLoc;
 
 
-}
 
+    /**
+     * Set nomLoc
+     *
+     * @param string $nomLoc
+     *
+     * @return Localite
+     */
+    public function setNomLoc($nomLoc)
+    {
+        $this->nomLoc = $nomLoc;
+
+        return $this;
+    }
+
+    /**
+     * Get nomLoc
+     *
+     * @return string
+     */
+    public function getNomLoc()
+    {
+        return $this->nomLoc;
+    }
+
+    /**
+     * Set npaLoc
+     *
+     * @param string $npaLoc
+     *
+     * @return Localite
+     */
+    public function setNpaLoc($npaLoc)
+    {
+        $this->npaLoc = $npaLoc;
+
+        return $this;
+    }
+
+    /**
+     * Get npaLoc
+     *
+     * @return string
+     */
+    public function getNpaLoc()
+    {
+        return $this->npaLoc;
+    }
+
+    /**
+     * Get idLoc
+     *
+     * @return integer
+     */
+    public function getIdLoc()
+    {
+        return $this->idLoc;
+    }
+}

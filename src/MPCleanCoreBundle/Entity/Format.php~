@@ -36,5 +36,62 @@ class Format
     private $idForm;
 
 
-}
 
+    /**
+     * Set libelleFor
+     *
+     * @param string $libelleFor
+     *
+     * @return Format
+     */
+    public function setLibelleFor($libelleFor)
+    {
+        $this->libelleFor = $libelleFor;
+
+        return $this;
+    }
+
+    /**
+     * Get libelleFor
+     *
+     * @return string
+     */
+    public function getLibelleFor()
+    {
+        return $this->libelleFor;
+    }
+
+    /**
+     * Set extensionFor
+     *
+     * @param string $extensionFor
+     *
+     * @return Format
+     */
+    public function setExtensionFor($extensionFor)
+    {
+        $this->extensionFor = $extensionFor;
+
+        return $this;
+    }
+
+    /**
+     * Get extensionFor
+     *
+     * @return string
+     */
+    public function getExtensionFor()
+    {
+        return $this->extensionFor;
+    }
+
+    /**
+     * Get idForm
+     *
+     * @return integer
+     */
+    public function getIdForm()
+    {
+        return $this->idForm;
+    }
+}

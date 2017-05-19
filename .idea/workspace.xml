@@ -2,14 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="775d0e24-a85b-4284-a4c7-c8ce0bbc9edd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/menu_ind.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/menu_sec.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Marchandises.orm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Prestation.orm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Produit.orm.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Controller/MainController.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Controller/MainController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Article.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Categorie.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Categorie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Classe.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Classe.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Client.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Client.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Commande.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Commande.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Fabricant.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Fabricant.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Format.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Format.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Lier.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Lier.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Localite.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Localite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Marque.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Marque.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Media.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Media.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/OptionPrestation.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/OptionPrestation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Payer.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Payer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Posseder.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Posseder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/TypePaiement.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/TypePaiement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/TypeProduit.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/TypeProduit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Vehicule.php" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Vehicule.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Article.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Article.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Categorie.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Categorie.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Classe.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Classe.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Client.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Client.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Commande.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Commande.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Fabricant.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Fabricant.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Format.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Format.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Lier.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Lier.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Localite.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Localite.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Marque.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Marque.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Media.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Media.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/OptionPrestation.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/OptionPrestation.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Payer.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Payer.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Posseder.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Posseder.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/TypePaiement.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/TypePaiement.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/TypeProduit.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/TypeProduit.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Vehicule.orm.xml" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Vehicule.orm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/contact.html.twig" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/contact.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/layout.html.twig" afterPath="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +74,48 @@
       <file leaf-file-name="contact.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/contact.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Produit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Produit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="33" column="7" lean-forward="false" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -49,8 +124,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="334" column="60" lean-forward="false" selection-start-line="334" selection-start-column="60" selection-end-line="334" selection-end-column="60" />
+            <state relative-caret-position="476">
+              <caret line="367" column="20" lean-forward="false" selection-start-line="367" selection-start-column="20" selection-end-line="367" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -59,14 +134,14 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-243">
-              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="51">
+              <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -76,12 +151,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="369">
+              <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+              <folding>
+                <element signature="e#48#105#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,10 +203,13 @@
         <option value="$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat2/css/prat2.css" />
         <option value="$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat1/detail.html" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/MPCleanCoreBundle/Controller/MainController.php" />
-        <option value="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/menu_sec.html.twig" />
+        <option value="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/menu_ind.html.twig" />
+        <option value="$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Localite.php" />
         <option value="$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/contact.html.twig" />
+        <option value="$PROJECT_DIR$/src/MPCleanCoreBundle/Controller/MainController.php" />
       </list>
     </option>
   </component>
@@ -416,6 +496,58 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctrine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPClean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPClean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPCleanCoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPClean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPClean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPCleanCoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -493,32 +625,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPClean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPClean" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -552,8 +658,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\MPClean\src\MPCleanCoreBundle\Resources\views\Main" />
       <recent name="C:\wamp\www\MPClean\app\Resources\views" />
+      <recent name="C:\wamp\www\MPClean\src\MPCleanCoreBundle\Resources\views\Main" />
       <recent name="C:\wamp\www\MPClean\src\MPCleanCoreBundle\Resources\views" />
       <recent name="C:\wamp\www\MPClean\app\Resources\views\MPClean" />
     </key>
@@ -660,11 +766,13 @@
       <workItem from="1493369651651" duration="3288000" />
       <workItem from="1493971374465" duration="4801000" />
       <workItem from="1494578001420" duration="4971000" />
+      <workItem from="1495182187251" duration="17000" />
+      <workItem from="1495182227167" duration="5494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37101000" />
+    <option name="totallyTimeSpent" value="42612000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -682,7 +790,6 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -694,6 +801,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -712,37 +820,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/MPClean/layout.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Controller/ProduitController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Controller/PrestationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Controller/MainController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#48#105#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -765,7 +845,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#48#105#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -773,13 +855,6 @@
     <entry file="file://$PROJECT_DIR$/web/css/bootstrap-responsive.css" />
     <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css" />
     <entry file="file://$PROJECT_DIR$/web/css/style-solid-black.css" />
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="54" lean-forward="false" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -823,13 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Marchandises.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/responsiveslides.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -845,13 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Produit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/MPClean/index.html.twig" />
     <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -864,24 +925,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Controller/DefaultController.php" />
     <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/indexmenu.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/nav.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="434" column="1" lean-forward="false" selection-start-line="434" selection-start-column="1" selection-end-line="434" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,48 +945,15 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat2/prat1.html" />
-    <entry file="file://$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat2/img/catelle.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat2/prat2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat2/css/prat2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat1/prat1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="106" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat1/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat2/img/catelle.jpg" />
+    <entry file="file://$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat2/prat2.html" />
+    <entry file="file://$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat2/css/prat2.css" />
+    <entry file="file://$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat1/prat1.html" />
+    <entry file="file://$USER_HOME$/Desktop/TE HTML_CSS 05.05.17/start/prat1/detail.html" />
     <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,23 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Controller/MainController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -966,39 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="334" column="60" lean-forward="false" selection-start-line="334" selection-start-column="60" selection-end-line="334" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/contact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,6 +976,128 @@
         <state relative-caret-position="17">
           <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/menu_ind.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/menu_sec.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="6" lean-forward="false" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Localite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Marchandises.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/config/doctrine/Marchandises.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Entity/Produit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="7" lean-forward="false" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Resources/views/Main/contact.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="367" column="20" lean-forward="false" selection-start-line="367" selection-start-column="20" selection-end-line="367" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MPCleanCoreBundle/Controller/MainController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="e#48#105#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

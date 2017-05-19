@@ -29,5 +29,38 @@ class Marque
     private $idMarq;
 
 
-}
 
+    /**
+     * Set libelleMarq
+     *
+     * @param string $libelleMarq
+     *
+     * @return Marque
+     */
+    public function setLibelleMarq($libelleMarq)
+    {
+        $this->libelleMarq = $libelleMarq;
+
+        return $this;
+    }
+
+    /**
+     * Get libelleMarq
+     *
+     * @return string
+     */
+    public function getLibelleMarq()
+    {
+        return $this->libelleMarq;
+    }
+
+    /**
+     * Get idMarq
+     *
+     * @return integer
+     */
+    public function getIdMarq()
+    {
+        return $this->idMarq;
+    }
+}

@@ -29,5 +29,38 @@ class Article
     private $idArt;
 
 
-}
 
+    /**
+     * Set artLibelle
+     *
+     * @param string $artLibelle
+     *
+     * @return Article
+     */
+    public function setArtLibelle($artLibelle)
+    {
+        $this->artLibelle = $artLibelle;
+
+        return $this;
+    }
+
+    /**
+     * Get artLibelle
+     *
+     * @return string
+     */
+    public function getArtLibelle()
+    {
+        return $this->artLibelle;
+    }
+
+    /**
+     * Get idArt
+     *
+     * @return integer
+     */
+    public function getIdArt()
+    {
+        return $this->idArt;
+    }
+}

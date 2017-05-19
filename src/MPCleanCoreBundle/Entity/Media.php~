@@ -36,5 +36,62 @@ class Media
     private $idMed;
 
 
-}
 
+    /**
+     * Set fkForm
+     *
+     * @param integer $fkForm
+     *
+     * @return Media
+     */
+    public function setFkForm($fkForm)
+    {
+        $this->fkForm = $fkForm;
+
+        return $this;
+    }
+
+    /**
+     * Get fkForm
+     *
+     * @return integer
+     */
+    public function getFkForm()
+    {
+        return $this->fkForm;
+    }
+
+    /**
+     * Set urlMed
+     *
+     * @param string $urlMed
+     *
+     * @return Media
+     */
+    public function setUrlMed($urlMed)
+    {
+        $this->urlMed = $urlMed;
+
+        return $this;
+    }
+
+    /**
+     * Get urlMed
+     *
+     * @return string
+     */
+    public function getUrlMed()
+    {
+        return $this->urlMed;
+    }
+
+    /**
+     * Get idMed
+     *
+     * @return integer
+     */
+    public function getIdMed()
+    {
+        return $this->idMed;
+    }
+}

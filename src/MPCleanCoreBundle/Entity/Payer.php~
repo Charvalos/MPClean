@@ -31,5 +31,52 @@ class Payer
     private $fkCli;
 
 
-}
 
+    /**
+     * Set fkTypepai
+     *
+     * @param integer $fkTypepai
+     *
+     * @return Payer
+     */
+    public function setFkTypepai($fkTypepai)
+    {
+        $this->fkTypepai = $fkTypepai;
+
+        return $this;
+    }
+
+    /**
+     * Get fkTypepai
+     *
+     * @return integer
+     */
+    public function getFkTypepai()
+    {
+        return $this->fkTypepai;
+    }
+
+    /**
+     * Set fkCli
+     *
+     * @param integer $fkCli
+     *
+     * @return Payer
+     */
+    public function setFkCli($fkCli)
+    {
+        $this->fkCli = $fkCli;
+
+        return $this;
+    }
+
+    /**
+     * Get fkCli
+     *
+     * @return integer
+     */
+    public function getFkCli()
+    {
+        return $this->fkCli;
+    }
+}

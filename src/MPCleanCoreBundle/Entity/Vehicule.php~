@@ -36,5 +36,62 @@ class Vehicule
     private $idVhc;
 
 
-}
 
+    /**
+     * Set fkClasse
+     *
+     * @param integer $fkClasse
+     *
+     * @return Vehicule
+     */
+    public function setFkClasse($fkClasse)
+    {
+        $this->fkClasse = $fkClasse;
+
+        return $this;
+    }
+
+    /**
+     * Get fkClasse
+     *
+     * @return integer
+     */
+    public function getFkClasse()
+    {
+        return $this->fkClasse;
+    }
+
+    /**
+     * Set libelleVhc
+     *
+     * @param string $libelleVhc
+     *
+     * @return Vehicule
+     */
+    public function setLibelleVhc($libelleVhc)
+    {
+        $this->libelleVhc = $libelleVhc;
+
+        return $this;
+    }
+
+    /**
+     * Get libelleVhc
+     *
+     * @return string
+     */
+    public function getLibelleVhc()
+    {
+        return $this->libelleVhc;
+    }
+
+    /**
+     * Get idVhc
+     *
+     * @return integer
+     */
+    public function getIdVhc()
+    {
+        return $this->idVhc;
+    }
+}
