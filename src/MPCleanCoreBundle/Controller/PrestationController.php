@@ -12,7 +12,9 @@ class PrestationController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('MPCleanCoreBundle:Prestation:index.html.twig', array());
+        return $this->render('MPCleanCoreBundle:Prestation:index.html.twig', array(
+            // ...
+        ));
     }
 
 }

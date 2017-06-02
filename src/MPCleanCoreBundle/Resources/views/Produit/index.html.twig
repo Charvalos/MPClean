@@ -1,11 +1,7 @@
-{% extends "::layout.html.twig" %}
+{% extends "::base.html.twig" %}
 
-{% block title %}{{ parent() }}{% endblock %}
+{% block title %}MPCleanCoreBundle:Produit:index{% endblock %}
 
 {% block body %}
-    <b>Produits</b>
-    <br />
-    {% for produit in produits %}
-        {{ produit.libelle_prod }}
-    {% endfor %}
+<h1>Welcome to the Produit:index page</h1>
 {% endblock %}

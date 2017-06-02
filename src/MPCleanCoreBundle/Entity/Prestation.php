@@ -5,131 +5,93 @@ namespace MPCleanCoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
+ * Prestation
+ *
+ * @ORM\Table(name="prestation")
+ * @ORM\Entity(repositoryClass="MPCleanCoreBundle\Repository\PrestationRepository")
  */
-class Prestation extends Marchandises
+class Prestation extends Marchandise
 {
     /**
-     * @var integer
+     * @var int
      *
-     * @ORM\Column(name="fk_art", type="integer", nullable=false)
-     * @ORM\OneToOne(targetEntity="MPClean\MPCleanCoreBundle\Entity\Article", cascade={"persist"})
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $fkArt;
+    private $id;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="libelle_serv", type="text", length=65535, nullable=false)
+     * @ORM\Column(name="libellePrest", type="text")
      */
-    private $libelleServ;
+    private $libellePrest;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="description_serv", type="text", length=65535, nullable=false)
+     * @ORM\Column(name="descPrest", type="text", nullable=true)
      */
-    private $descriptionServ;
-
-    /**
-     * @var \MPCleanCoreBundle\Entity\Marchandises
-     */
-    private $fkMarc;
+    private $descPrest;
 
 
     /**
-     * Set fkArt
+     * Get id
      *
-     * @param integer $fkArt
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set libellePrest
+     *
+     * @param string $libellePrest
      *
      * @return Prestation
      */
-    public function setFkArt($fkArt)
+    public function setLibellePrest($libellePrest)
     {
-        $this->fkArt = $fkArt;
+        $this->libellePrest = $libellePrest;
 
         return $this;
     }
 
     /**
-     * Get fkArt
-     *
-     * @return integer
-     */
-    public function getFkArt()
-    {
-        return $this->fkArt;
-    }
-
-    /**
-     * Set libelleServ
-     *
-     * @param string $libelleServ
-     *
-     * @return Prestation
-     */
-    public function setLibelleServ($libelleServ)
-    {
-        $this->libelleServ = $libelleServ;
-
-        return $this;
-    }
-
-    /**
-     * Get libelleServ
+     * Get libellePrest
      *
      * @return string
      */
-    public function getLibelleServ()
+    public function getLibellePrest()
     {
-        return $this->libelleServ;
+        return $this->libellePrest;
     }
 
     /**
-     * Set descriptionServ
+     * Set descPrest
      *
-     * @param string $descriptionServ
+     * @param string $descPrest
      *
      * @return Prestation
      */
-    public function setDescriptionServ($descriptionServ)
+    public function setDescPrest($descPrest)
     {
-        $this->descriptionServ = $descriptionServ;
+        $this->descPrest = $descPrest;
 
         return $this;
     }
 
     /**
-     * Get descriptionServ
+     * Get descPrest
      *
      * @return string
      */
-    public function getDescriptionServ()
+    public function getDescPrest()
     {
-        return $this->descriptionServ;
-    }
-
-    /**
-     * Set fkMarc
-     *
-     * @param \MPCleanCoreBundle\Entity\Marchandise $fkMarc
-     *
-     * @return Prestation
-     */
-    public function setFkMarc(\MPCleanCoreBundle\Entity\Marchandise $fkMarc = null)
-    {
-        $this->fkMarc = $fkMarc;
-
-        return $this;
-    }
-
-    /**
-     * Get fkMarc
-     *
-     * @return \MPCleanCoreBundle\Entity\Marchandise
-     */
-    public function getFkMarc()
-    {
-        return $this->fkMarc;
+        return $this->descPrest;
     }
 }
+

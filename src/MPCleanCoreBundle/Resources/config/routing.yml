@@ -5,3 +5,7 @@ mp_clean_index:
 mp_clean_contact:
     path:     /contact
     defaults: {_controller: MPCleanCoreBundle:Main:contact}
+
+mp_clean_prod_nettoyage:
+    path:     /produit_nettoyage
+    defaults: {_controller: MPCleanCoreBundle:Produit:index}
