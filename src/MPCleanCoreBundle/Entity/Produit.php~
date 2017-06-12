@@ -129,28 +129,5 @@ class Produit extends Marchandise
     {
         return $this->qteProd;
     }
-
-    /**
-     * Set type
-     *
-     * @param \MPCleanCoreBundle\Entity\Type $type
-     *
-     * @return Produit
-     */
-    public function setType(\MPCleanCoreBundle\Entity\Type $type)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
-
-    /**
-     * Get type
-     *
-     * @return \MPCleanCoreBundle\Entity\Type
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
 }
+

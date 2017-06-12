@@ -8,4 +8,4 @@ mp_clean_contact:
 
 mp_clean_prod_nettoyage:
     path:     /produit_nettoyage
-    defaults: {_controller: MPCleanCoreBundle:Produit:index}
+    defaults: {_controller: MPCleanCoreBundle:Produit:nettoyage}

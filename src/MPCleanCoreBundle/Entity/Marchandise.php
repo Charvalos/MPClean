@@ -31,7 +31,6 @@ abstract class Marchandise
      */
     private $prix;
 
-
     /**
      * Get id
      *
