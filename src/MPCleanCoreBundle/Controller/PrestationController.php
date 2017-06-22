@@ -12,8 +12,10 @@ class PrestationController extends Controller
      */
     public function indexAction()
     {
+        $prestation = $this->getDoctrine()->getRepository('MPCleanCoreBundle:Prestation')->findAll();
+
         return $this->render('MPCleanCoreBundle:Prestation:index.html.twig', array(
-            // ...
+            'prestations' => $prestation
         ));
     }
 

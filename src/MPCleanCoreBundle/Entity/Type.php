@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Type
  *
- * @ORM\Table(name="type")
+ * @ORM\Table(name="type", indexes={@ORM\Index(name="indDefinitionType", columns={"definitionType"})})
  * @ORM\Entity(repositoryClass="MPCleanCoreBundle\Repository\TypeRepository")
  */
 class Type

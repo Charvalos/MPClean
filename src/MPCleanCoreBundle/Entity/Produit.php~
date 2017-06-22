@@ -7,7 +7,10 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Produit
  *
- * @ORM\Table(name="produit")
+ * @ORM\Table(name="produit", indexes={
+ *      @ORM\Index(name="indProduit", columns={"libelleProd"}),
+ *      @ORM\Index(name="indQteProduit", columns={"qteProd"})
+ * })
  * @ORM\Entity(repositoryClass="MPCleanCoreBundle\Repository\ProduitRepository")
  */
 class Produit extends Marchandise
@@ -47,6 +50,11 @@ class Produit extends Marchandise
      * @ORM\JoinColumn(nullable=false)
      */
     private $type;
+
+    /**
+     * @ORM\OneToOne(targetEntity="MPCleanCoreBundle\Entity\Media")
+     */
+    private $media;
 
     /**
      * Get id
@@ -129,5 +137,28 @@ class Produit extends Marchandise
     {
         return $this->qteProd;
     }
-}
 
+    /**
+     * Set type
+     *
+     * @param \MPCleanCoreBundle\Entity\Type $type
+     *
+     * @return Produit
+     */
+    public function setType(\MPCleanCoreBundle\Entity\Type $type)
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * Get type
+     *
+     * @return \MPCleanCoreBundle\Entity\Type
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+}

@@ -1,11 +1,27 @@
 mp_clean_index:
     path:     /accueil
-    defaults: { _controller: MPCleanCoreBundle:Main:index }
+    defaults:
+        _controller: MPCleanCoreBundle:Main:index
 
 mp_clean_contact:
     path:     /contact
-    defaults: {_controller: MPCleanCoreBundle:Main:contact}
+    defaults:
+        _controller: MPCleanCoreBundle:Main:contact
 
 mp_clean_prod_nettoyage:
     path:     /produit_nettoyage
-    defaults: {_controller: MPCleanCoreBundle:Produit:nettoyage}
+    defaults:
+        _controller: MPCleanCoreBundle:Produit:index
+
+mp_clean_prod_nettoyage_view:
+    path:     /produit_nettoyage/{id}
+    defaults:
+        _controller: MPCleanCoreBundle:Produit:details
+    requirements:
+        id: \d+
+
+
+mp_clean_prestation:
+    path:     /prestation
+    defaults:
+        _controller: MPCleanCoreBundle:Prestation:index

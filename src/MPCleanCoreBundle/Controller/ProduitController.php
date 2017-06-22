@@ -9,10 +9,24 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class ProduitController extends Controller
 {
-    public function nettoyageAction()
+    public function indexAction()
     {
         $produits = $this->getDoctrine()->getRepository('MPCleanCoreBundle:Produit')->findAll();
 
-        return $this->render('MPCleanCoreBundle:Produit:index.html.twig', array());
+        //Pour chaque produit, recherche de l'url de son image
+        foreach ($produits as $produit) {
+            $media = $produit->getMedia();
+            $id = $produit->getId();
+        }
+
+        return $this->render('MPCleanCoreBundle:Produit:index.html.twig', array(
+            'produits' => $produits,
+            'media' => $media
+        ));
+    }
+
+    public function detailsAction($id)
+    {
+
     }
 }

@@ -1,27 +1,109 @@
-{%  extends 'MPCleanCoreBundle:Main:layout.html.twig' %}
+{%  extends '::base.html.twig' %}
 
 {% block content %}
-    <div id="cate" class="categories">
-        <div class="container">
-            <h3>SERVICES & PRODUITS</h3>
-            <div class="categorie-grids">
-                <a href="bicycles.html"><div class="col-md-4 cate-grid grid1">
-                        <h4>ACCESSOIRES DE VOITURES</h4>
-                        <p>Décorez l'intérieur de votre voiture</p>
-                        <a class="store" href="bicycles.html">GO TO STORE</a>
-                    </div></a>
-                <a href="bicycles.html"><div class="col-md-4 cate-grid grid2">
-                        <h4>NETTOYAGE / ENTRETIEN</h4>
-                        <p>Retrouvez votre véhicule comme neuf</p>
-                        <a class="store" href="bicycles.html">GO TO STORE</a>
-                    </div></a>
-                <a href="bicycles.html"><div class="col-md-4 cate-grid grid3">
-                        <h4>PRODUITS DE NETTOYAGE</h4>
-                        <p>Entretenez votre voiture</p>
-                        <a class="store" href="bicycles.html">GO TO STORE</a>
-                    </div></a>
-                <div class="clearfix"></div>
+    <div class="mian">
+        <div class="content-top">
+            <div class="sellers">
+                <h4><span><span>Meilleures</span> ventes</span></h4>
+            </div>
+            <div class="section group">
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="product-desc">
+                        <img src="{{ asset("images/ts1.jpg") }}" alt="" />
+                        <h4>Produit 1</h4>
+                    </div>
+                    <div class="prod-inner">
+                        <span class="price">$12.50</span>
+                        <a href="single.html" class="button" rel="nofollow">Add to cart</a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="product-desc">
+                        <img src="{{ asset("images/ts1.jpg") }}" alt="" />
+                        <h4>Produit 1</h4>
+                    </div>
+                    <div class="prod-inner">
+                        <span class="price">$12.50</span>
+                        <a href="single.html" class="button" rel="nofollow">Add to cart</a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="product-desc">
+                        <img src="{{ asset("images/ts1.jpg") }}" alt="" />
+                        <h4>Produit 1</h4>
+                    </div>
+                    <div class="prod-inner">
+                        <span class="price">$12.50</span>
+                        <a href="single.html" class="button" rel="nofollow">Add to cart</a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="product-desc">
+                        <img src="{{ asset("images/ts1.jpg") }}" alt="" />
+                        <h4>Produit 1</h4>
+                    </div>
+                    <div class="prod-inner">
+                        <span class="price">$12.50</span>
+                        <a href="single.html" class="button" rel="nofollow">Add to cart</a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
             </div>
         </div>
-    </div>
+        <div class="content-top">
+            <div class="sellers">
+                <h4><span><span>Produits</span> à l'affiche</span></h4>
+            </div>
+            <div class="section group">
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="product-desc">
+                        <img src="{{ asset("images/ts1.jpg") }}" alt="" />
+                        <h4>Produit 1</h4>
+                    </div>
+                    <div class="prod-inner">
+                        <span class="price">$12.50</span>
+                        <a href="single.html" class="button" rel="nofollow">Add to cart</a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="product-desc">
+                        <img src="{{ asset("images/ts1.jpg") }}" alt="" />
+                        <h4>Produit 1</h4>
+                    </div>
+                    <div class="prod-inner">
+                        <span class="price">$12.50</span>
+                        <a href="single.html" class="button" rel="nofollow">Add to cart</a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="product-desc">
+                        <img src="{{ asset("images/ts1.jpg") }}" alt="" />
+                        <h4>Produit 1</h4>
+                    </div>
+                    <div class="prod-inner">
+                        <span class="price">$12.50</span>
+                        <a href="single.html" class="button" rel="nofollow">Add to cart</a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="product-desc">
+                        <img src="{{ asset("images/ts1.jpg") }}" alt="" />
+                        <h4>Produit 1</h4>
+                    </div>
+                    <div class="prod-inner">
+                        <span class="price">$12.50</span>
+                        <a href="single.html" class="button" rel="nofollow">Add to cart</a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
 {% endblock %}

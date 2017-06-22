@@ -1,7 +1,5 @@
-{% extends "::base.html.twig" %}
+{%  extends '::base.html.twig' %}
 
-{% block title %}MPCleanCoreBundle:Prestation:index{% endblock %}
-
-{% block body %}
-<h1>Welcome to the Prestation:index page</h1>
+{% block content %}
+{{ dump(prestations) }}
 {% endblock %}

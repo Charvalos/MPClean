@@ -24,7 +24,7 @@ class Prestation extends Marchandise
     /**
      * @var string
      *
-     * @ORM\Column(name="libellePrest", type="text")
+     * @ORM\Column(name="libellePrest", type="text", length=50)
      */
     private $libellePrest;
 

@@ -1,8 +1,28 @@
-{%  extends 'MPCleanCoreBundle:Main:layout.html.twig' %}
-
-{% block menu %}
-    {% include 'menu_sec.html.twig' %}
-{% endblock %}
+{%  extends '::base.html.twig' %}
 
 {% block content %}
+    {{ dump(produits) }}
+    <div class="content-top">
+        <div class="sellers">
+            <h4><span><span>Produits de nettoyage</span></h4>
+        </div>
+        <div class="section group">
+
+            {% for produit in produits %}
+            <div class="col_1_of_4 span_1_of_4">
+                <div class="product-desc">
+                    <img src="{{ asset(produit.media.urlMedia ~ "." ~ produit.media.typeMedia) }}" />
+                    <h4>{{ produit.libelleProd }}</h4>
+                </div>
+                <div class="prod-inner">
+                    <span class="price">{{ produit.prix }} CHF</span>
+                    <a href="{{ path("mp_clean_prod_nettoyage_view", {"id" : 1}) }}" class="button" rel="nofollow">Détails</a>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="clear"></div>
+        </div>
+    </div>
 {% endblock %}

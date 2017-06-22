@@ -6,39 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% block stylesheets %}
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" />
     {% endblock %}
 
     {% block javascript %}
-        <script type="text/javascript" href="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/javascript" href="{{ asset('js/jquery.min.js') }}"></script>
-        <script type="text/javascript" href="{{ asset('js/bootstrap.js') }}"></script>
-        <script type="text/javascript" href="{{ asset('js/jquery.easydropdown.js') }}"></script>
-        <script type="text/javascript" href="{{ asset('js/responsiveslides.min.js') }}"></script>
-        <script type="text/javascript">
-            $(function () {
-                $("#slider").responsiveSlides({
-                    auto: true,
-                    nav: true,
-                    speed: 500,
-                    namespace: "callbacks",
-                    pager: true,
-                });
-            });
-        </script>
+        <script type="text/javascript" href="{{ asset('js/script.js') }}"></script>
+        <script type="text/javascript" href="{{ asset('js/superfish.js') }}"></script>
     {% endblock %}
 
-    <title>{% block title %}MPClean{% endblock %}</title>
+    <title>MPClean</title>
 </head>
 <body>
-{% block menu %}
-{% endblock %}
-
-{% block content %}
-{% endblock %}
-
-</div>
+    <div class="wrap">
+        <div class="total">
+            <div class="header">
+                <div class="header-bot">
+                    <div class="logo">
+                        <a href="#"><img src="{{ asset("images/logo.png") }}" alt=""/></a>
+                    </div>
+                    <div class="f-right">
+                        <p class="welcome-msg">Bienvenue sur MPClean !</p>
+                        <div class="clear"></div>
+                        <ul class="links">
+                            <li class="first"><a href="#" title="Mon compte">Se connecter</a></li>
+                            <li class="last"><a href="#">S'inscrire</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <div class="menu">
+                    <ul>
+                        <li class="active"><a href="{{ path("mp_clean_index") }}">Accueil</a></li>
+                        <li><a href="{{ path("mp_clean_prod_nettoyage") }}">Produits de nettoyage</a></li>
+                        <li><a href="{{ path("mp_clean_prestation") }}">Prestations</a></li>
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="{{ path("mp_clean_contact") }}">Nous contacter</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+            <div class="clear"></div>
+            </div>
+            {% block content %}
+            {% endblock %}
+            <div class="footer">
+                <div class="footer-top">
+                    <div class="col_1_of_4 span_1_of_4">
+                        <h3>INFORMATIONS</h3>
+                        <ul>
+                            <li><a href="#">À propos de nous</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Nous contacter</a></li>
+                            <li><a href="#">Conditions de ventes</a></li>
+                            <li><a href="#">Legal Notice</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_1_of_4 span_1_of_4">
+                        <h3>CATEGORIES</h3>
+                        <ul>
+                            <li><a href="#">Nouveaux produits</a></li>
+                            <li><a href="#">Meilleures ventes</a></li>
+                            <li><a href="#">Offres</a></li>
+                            <li><a href="#">Produits de nettoyage</a></li>
+                            <li><a href="#">Prestations</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_1_of_4 span_1_of_4">
+                        <h3>MON COMPTE</h3>
+                        <ul>
+                            <li><a href="#">Mon compte</a></li>
+                            <li><a href="#">Informations personnelles</a></li>
+                            <li><a href="#">Prix</a></li>
+                            <li><a href="#">Adresse</a></li>
+                            <li><a href="#">Localités</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_1_of_4 span_1_of_4 footer-lastgrid">
+                        <h3>NOUS SUIVRE</h3>
+                        <ul>
+                            <li><a href="#">FACEBOOK</a></li>
+                            <li><a href="#">TWITTER</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="copy">
+                    <p>Design by <a href="#">W3layouts</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
